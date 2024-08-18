@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnux0463yu0f2"
-path="res://.godot/imported/blue_dragon_scale.png-478607a74cb0f98c02f2457d57770882.ctex"
+path="res://.godot/imported/blue_dragon_scale.png-3b3bd499e1dc713f1b4e60b230f6d4c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://blue_dragon_scale.png"
-dest_files=["res://.godot/imported/blue_dragon_scale.png-478607a74cb0f98c02f2457d57770882.ctex"]
+source_file="res://flying_dragon-1.1/blue_dragon_scale.png"
+dest_files=["res://.godot/imported/blue_dragon_scale.png-3b3bd499e1dc713f1b4e60b230f6d4c9.ctex"]
 
 [params]
 

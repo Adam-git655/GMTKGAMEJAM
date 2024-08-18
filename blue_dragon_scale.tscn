@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://io78lkc7lsdi"]
 
 [ext_resource type="Script" path="res://blue_dragon_scale.gd" id="1_hihth"]
-[ext_resource type="Texture2D" uid="uid://bnux0463yu0f2" path="res://blue_dragon_scale.png" id="1_v5s86"]
+[ext_resource type="Texture2D" uid="uid://bnux0463yu0f2" path="res://flying_dragon-1.1/blue_dragon_scale.png" id="2_okfjm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3lsq"]
 
@@ -13,7 +13,7 @@ script = ExtResource("1_hihth")
 
 [node name="BlueDragonScale" type="Sprite2D" parent="."]
 rotation = -1.5708
-texture = ExtResource("1_v5s86")
+texture = ExtResource("2_okfjm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_h3lsq")
