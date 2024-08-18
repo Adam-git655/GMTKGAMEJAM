@@ -1,19 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://dobnq6a7tfhrc"]
+[gd_scene load_steps=6 format=3 uid="uid://dobnq6a7tfhrc"]
 
 [ext_resource type="PackedScene" uid="uid://djorglcqkct68" path="res://enemy_spawner.tscn" id="1_ccbbl"]
 [ext_resource type="Script" path="res://main.gd" id="1_uoen1"]
+[ext_resource type="Texture2D" uid="uid://b1x6agcdj1a30" path="res://GMTK game background.png" id="2_d6fpn"]
 [ext_resource type="PackedScene" uid="uid://34sqg2qpy6j3" path="res://dragons_lair.tscn" id="3_sl7a0"]
 [ext_resource type="PackedScene" uid="uid://d4jtw0jd8jiei" path="res://ui.tscn" id="5_hadpl"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_uoen1")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 z_index = -2
 offset_right = 1153.0
 offset_bottom = 650.0
 size_flags_vertical = 0
-color = Color(0.458824, 0.964706, 0.376471, 1)
+texture = ExtResource("2_d6fpn")
 
 [node name="EnemySpawner" parent="." instance=ExtResource("1_ccbbl")]
 
