@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://4evuenbrs3wm"]
+
+[ext_resource type="Texture2D" uid="uid://vthgvuqluckx" path="res://komodo-dragon/komodo-dragon.png" id="1_5kgmu"]
+[ext_resource type="Script" path="res://komodo_dragon_tower_panel.gd" id="1_yossp"]
+
+[node name="KomodoDragonTowerPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yossp")
+
+[node name="Komodo-dragon" type="Sprite2D" parent="."]
+position = Vector2(81, 40)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_5kgmu")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

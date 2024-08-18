@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dobnq6a7tfhrc"]
+[gd_scene load_steps=6 format=3 uid="uid://dobnq6a7tfhrc"]
 
 [ext_resource type="PackedScene" uid="uid://djorglcqkct68" path="res://enemy_spawner.tscn" id="1_ccbbl"]
 [ext_resource type="Script" path="res://main.gd" id="1_uoen1"]
 [ext_resource type="Texture2D" uid="uid://cktvblc2ow78q" path="res://GMTK game background (1).png" id="2_lqkcm"]
 [ext_resource type="PackedScene" uid="uid://34sqg2qpy6j3" path="res://dragons_lair.tscn" id="3_sl7a0"]
-[ext_resource type="PackedScene" uid="uid://dblklnm0hpdve" path="res://komodo_dragon_tower.tscn" id="5_50m2m"]
 [ext_resource type="PackedScene" uid="uid://d4jtw0jd8jiei" path="res://ui.tscn" id="5_hadpl"]
 
 [node name="Main" type="Node2D"]
@@ -23,9 +22,6 @@ texture = ExtResource("2_lqkcm")
 position = Vector2(72, 335)
 
 [node name="Reptiles" type="Node2D" parent="."]
-
-[node name="KomodoDragonTower" parent="Reptiles" instance=ExtResource("5_50m2m")]
-position = Vector2(925, 264)
 
 [node name="Enemies" type="Node" parent="."]
 
