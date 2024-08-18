@@ -19,7 +19,8 @@ func _process(delta: float) -> void:
 			$SlashAttackTimer.stop()
 		
 func slash_attack():
-	self.look_at(curr.global_position)
+	if curr != null:
+		self.look_at(curr.global_position)
 	$AnimatedSprite2D.play("FurySlash")
 	$Hitbox/CollisionShape2D.disabled = false
 	
@@ -60,5 +61,6 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("red_dragons"):
 		await get_tree().create_timer(0.3).timeout
-		body.health -= scale_damage
 		$Hitbox/CollisionShape2D.disabled = true
+		if body:
+			body.health -= scale_damage
