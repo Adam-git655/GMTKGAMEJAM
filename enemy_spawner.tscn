@@ -1,0 +1,125 @@
+[gd_scene load_steps=2 format=3 uid="uid://djorglcqkct68"]
+
+[ext_resource type="Script" path="res://enemy_spawner.gd" id="1_0iab1"]
+
+[node name="EnemySpawner" type="Node2D"]
+script = ExtResource("1_0iab1")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1170, 69)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(1167, 94)
+
+[node name="Marker2D3" type="Marker2D" parent="."]
+position = Vector2(1169, 120)
+
+[node name="Marker2D4" type="Marker2D" parent="."]
+position = Vector2(1170, 149)
+
+[node name="Marker2D5" type="Marker2D" parent="."]
+position = Vector2(1170, 176)
+
+[node name="Marker2D6" type="Marker2D" parent="."]
+position = Vector2(1170, 209)
+
+[node name="Marker2D7" type="Marker2D" parent="."]
+position = Vector2(1170, 240)
+
+[node name="Marker2D8" type="Marker2D" parent="."]
+position = Vector2(1170, 271)
+
+[node name="Marker2D9" type="Marker2D" parent="."]
+position = Vector2(1170, 303)
+
+[node name="Marker2D10" type="Marker2D" parent="."]
+position = Vector2(1170, 338)
+
+[node name="Marker2D11" type="Marker2D" parent="."]
+position = Vector2(1170, 380)
+
+[node name="Marker2D12" type="Marker2D" parent="."]
+position = Vector2(1170, 427)
+
+[node name="Marker2D13" type="Marker2D" parent="."]
+position = Vector2(1170, 461)
+
+[node name="Marker2D14" type="Marker2D" parent="."]
+position = Vector2(1170, 492)
+
+[node name="Marker2D15" type="Marker2D" parent="."]
+position = Vector2(1170, 519)
+
+[node name="Marker2D16" type="Marker2D" parent="."]
+position = Vector2(1170, 552)
+
+[node name="Marker2D17" type="Marker2D" parent="."]
+position = Vector2(1170, 580)
+
+[node name="Marker2D18" type="Marker2D" parent="."]
+position = Vector2(1170, 613)
+
+[node name="Marker2D19" type="Marker2D" parent="."]
+position = Vector2(1169, 41)
+
+[node name="Marker2D20" type="Marker2D" parent="."]
+position = Vector2(1138, 70)
+
+[node name="Marker2D21" type="Marker2D" parent="."]
+position = Vector2(1138, 99)
+
+[node name="Marker2D22" type="Marker2D" parent="."]
+position = Vector2(1138, 133)
+
+[node name="Marker2D23" type="Marker2D" parent="."]
+position = Vector2(1138, 162)
+
+[node name="Marker2D24" type="Marker2D" parent="."]
+position = Vector2(1138, 196)
+
+[node name="Marker2D25" type="Marker2D" parent="."]
+position = Vector2(1138, 230)
+
+[node name="Marker2D26" type="Marker2D" parent="."]
+position = Vector2(1138, 261)
+
+[node name="Marker2D27" type="Marker2D" parent="."]
+position = Vector2(1138, 298)
+
+[node name="Marker2D28" type="Marker2D" parent="."]
+position = Vector2(1138, 333)
+
+[node name="Marker2D29" type="Marker2D" parent="."]
+position = Vector2(1138, 371)
+
+[node name="Marker2D30" type="Marker2D" parent="."]
+position = Vector2(1138, 402)
+
+[node name="Marker2D31" type="Marker2D" parent="."]
+position = Vector2(1138, 430)
+
+[node name="Marker2D32" type="Marker2D" parent="."]
+position = Vector2(1138, 463)
+
+[node name="Marker2D33" type="Marker2D" parent="."]
+position = Vector2(1138, 495)
+
+[node name="Marker2D34" type="Marker2D" parent="."]
+position = Vector2(1138, 530)
+
+[node name="Marker2D35" type="Marker2D" parent="."]
+position = Vector2(1138, 567)
+
+[node name="Marker2D36" type="Marker2D" parent="."]
+position = Vector2(1139, 606)
+
+[node name="Marker2D37" type="Marker2D" parent="."]
+position = Vector2(1139, 630)
+
+[node name="Marker2D38" type="Marker2D" parent="."]
+position = Vector2(1136, 35)
+
+[node name="RedDragonSpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="RedDragonSpawnTimer" to="." method="_on_red_dragon_spawn_timer_timeout"]

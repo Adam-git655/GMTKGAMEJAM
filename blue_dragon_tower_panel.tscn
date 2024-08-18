@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://xv77gxdwgxvm"]
+
+[ext_resource type="Script" path="res://blue_dragon_tower_panel.gd" id="1_fghvx"]
+[ext_resource type="Texture2D" uid="uid://dgbilkd4t2a7" path="res://flying_dragon-1.1/PNG/144x128/flying_twin_headed_dragon-blue.png" id="2_v6qx1"]
+
+[node name="BlueDragonTowerPanel" type="Panel"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fghvx")
+
+[node name="FlyingTwinHeadedDragon-blue" type="Sprite2D" parent="."]
+position = Vector2(40, 40)
+scale = Vector2(0.632812, 0.632813)
+texture = ExtResource("2_v6qx1")
+hframes = 3
+vframes = 4
+frame = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1m4pw8p6ypx"]
+
+[ext_resource type="Texture2D" uid="uid://2lpxp3owg4fr" path="res://flying_dragon-1.1/PNG/144x128/flying_dragon-red.png" id="1_gkyhm"]
+[ext_resource type="Script" path="res://red_dragon.gd" id="1_ynljh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvjky"]
+atlas = ExtResource("1_gkyhm")
+region = Rect2(0, 384, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jf7cp"]
+atlas = ExtResource("1_gkyhm")
+region = Rect2(144, 384, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfrpt"]
+atlas = ExtResource("1_gkyhm")
+region = Rect2(288, 384, 144, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bt3gl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvjky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jf7cp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfrpt")
+}],
+"loop": true,
+"name": &"MoveLeft",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c7kh"]
+size = Vector2(112, 69)
+
+[node name="RedDragon" type="CharacterBody2D" groups=["red_dragons"]]
+script = ExtResource("1_ynljh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_bt3gl")
+animation = &"MoveLeft"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_1c7kh")
